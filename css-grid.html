@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #grid-wrapper {
+                width: 50%;
+                margin: 64px;
+                border: 5px solid black;
+                display: grid;
+
+                grid-template-rows: 72px 24px 72px;
+
+                grid-template-areas: 
+                'img bio bio'
+                '.  .  . '
+                'bio bio img'
+                ;
+            }
+
+            #area1 {
+                grid-area: a1;
+            }
+
+            #area2 {
+                grid-area: a2;
+            }
+
+            #area3 {
+                grid-area: a3;
+            }
+
+            #area4 {
+                grid-area: a4;
+            }
+
+            .img {
+                grid-area: img;
+            }
+
+            .bio {
+                grid-area: bio;
+            }
+
+            #grid-wrapper div {
+                width: 100%;
+                background-color: blue;
+                border: 2px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid-wrapper">
+            <div id="area1" class="img"><p>1</p></div>
+            <div id="area2" class="bio"><p>2</p></div>
+            <div id="area3" class="bio"><p>3</p></div>
+            <div id="area4" class="img"><p>4</p></div>
+        </div>
+    </body>
+</html>
