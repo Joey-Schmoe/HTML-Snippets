@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: gray;
+
+    padding: 16px;
+
+    height: 64px;
+}
+
+header div {
+    position: fixed;
+    top: 32px;
+    right: 16px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+
+    background-color: gray;
+    border: 2px solid black;
+    width: 50%;
+
+    text-align: center;
+    line-height: 36px;
+
+    position: fixed;
+    top: 0;
+    right: 8px;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+i {
+    color: white;
+}
+
+.do-not-display {
+    display: none;
+}
